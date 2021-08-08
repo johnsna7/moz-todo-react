@@ -4,7 +4,7 @@ function Form(props) {
     
     function handleSubmit(e) {
         e.preventDefault();
-        alert('Hello, world!');
+        props.addTask("Say hello!");
     }
 
     return (
