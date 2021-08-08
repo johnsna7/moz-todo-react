@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import React, { useState } from 'react';
 import Todo from "./components/Todo";
 import Form from "./components/Form";
@@ -9,7 +10,7 @@ function App(props) {
 
 	function addTask(name) {
 		const newTask = {
-			id: "id",
+			id: "todo-" + nanoid(),
 			name: name,
 			completed: false
 		};
