@@ -5,6 +5,10 @@ import FilterButton from "./components/FilterButton";
 
 function App(props) {
 
+	function addTask(name) {
+		alert(name);
+	}
+
 	const taskList = props.tasks.map(task => (
 		<Todo 
 			id={task.id}
