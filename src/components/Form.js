@@ -10,8 +10,10 @@ function Form(props) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        props.onSubmit(name);
-        setName("");
+        if (name != "") {
+            props.onSubmit(name);
+            setName("");
+        }
     }
 
     return (
