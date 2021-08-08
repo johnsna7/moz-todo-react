@@ -1,4 +1,5 @@
 import React from 'react';
+import Todo from "./components/Todo";
 
 function App(props) {
 	  return (
@@ -46,9 +47,9 @@ function App(props) {
 		          className="todo-list stack-large stack-exception"
 		          aria-labelledby="list-heading"
 		        >
-					<Todo />
-					<Todo />
-					<Todo />
+					<Todo name="Eat" />
+					<Todo name="Sleep" />
+					<Todo name="Repeat" />
 		        </ul>
 		      </div>
 		    );
